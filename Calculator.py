@@ -69,7 +69,7 @@ def buttonDivide():
 
 
 # Create number buttons
-button_1 = Button(root, bg='#5A595A', text="1", padx=41, pady=20,
+button_1 = Button(root, text="1", padx=41, pady=20,
                   command=lambda: buttonClick(1))
 button_2 = Button(root, text="2", padx=40, pady=20,
                   command=lambda: buttonClick(2))
