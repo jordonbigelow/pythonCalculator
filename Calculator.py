@@ -19,9 +19,6 @@ screen_center_y = int((screen_height / 2) - (window_height / 2))
 root.geometry(
     f'{window_width}x{window_height}+{screen_center_x}+{screen_center_y}')
 
-e = Entry(root, width=35, borderwidth=5)
-e.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
-
 
 def buttonClick(number):
     current_number = e.get()
@@ -82,6 +79,10 @@ def buttonDivide():
     first_num = int(first_number)
     e.delete(0, END)
 
+
+# Create the field where the numbers being operated on are shown
+e = Entry(root, width=35, borderwidth=5)
+e.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
 
 # Create number buttons
 button_1 = Button(root, text="1", padx=41, pady=20,
