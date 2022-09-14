@@ -1,6 +1,5 @@
 import math
 from tkinter import *
-from turtle import window_height, window_width
 
 root = Tk()
 root.title('Simple Calculator')
