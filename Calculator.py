@@ -4,6 +4,7 @@ from tkinter import *
 root = Tk()
 root.title('Simple Calculator')
 root.attributes('-alpha', 0.95)
+root.resizable(False, False)
 
 window_width = 370
 window_height = 455
