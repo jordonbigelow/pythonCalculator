@@ -15,7 +15,6 @@ screen_height = root.winfo_screenheight()
 screen_center_x = int((screen_width / 2) - (window_width / 2))
 screen_center_y = int((screen_height / 2) - (window_height / 2))
 
-
 root.geometry(
     f'{window_width}x{window_height}+{screen_center_x}+{screen_center_y}')
 
