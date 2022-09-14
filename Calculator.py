@@ -1,8 +1,23 @@
 import math
 from tkinter import *
+from turtle import window_height, window_width
 
 root = Tk()
 root.title('Simple Calculator')
+root.attributes('-alpha', 0.95)
+
+window_width = 370
+window_height = 455
+
+screen_width = root.winfo_screenwidth()
+screen_height = root.winfo_screenheight()
+
+screen_center_x = int((screen_width / 2) - (window_width / 2))
+screen_center_y = int((screen_height / 2) - (window_height / 2))
+
+
+root.geometry(
+    f'{window_width}x{window_height}+{screen_center_x}+{screen_center_y}')
 
 e = Entry(root, width=35, borderwidth=5)
 e.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
