@@ -106,8 +106,7 @@ button_0 = Button(root, text="0", padx=39, pady=20,
                   command=lambda: buttonClick(0))
 
 # Create unique buttons
-button_add = Button(root, text="+", bg='#F2A33C',
-                    padx=39, pady=20, command=buttonAdd)
+button_add = Button(root, text="+", padx=39, pady=20, command=buttonAdd)
 button_equals = Button(root, text="=", padx=101, pady=20, command=buttonEquals)
 button_clear = Button(root, text="Clear", padx=89,
                       pady=20, command=buttonClear)
