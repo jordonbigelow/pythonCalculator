@@ -84,37 +84,40 @@ e = Entry(root, width=35, borderwidth=5)
 e.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
 
 # Create number buttons
-button_1 = Button(root, text="1", padx=41, pady=20,
+button_1 = Button(root, text="1", fg='red', padx=41, pady=20,
                   command=lambda: buttonClick(1))
-button_2 = Button(root, text="2", padx=40, pady=20,
+button_2 = Button(root, text="2", fg='red', padx=40, pady=20,
                   command=lambda: buttonClick(2))
-button_3 = Button(root, text="3", padx=40, pady=20,
+button_3 = Button(root, text="3", fg='red', padx=40, pady=20,
                   command=lambda: buttonClick(3))
-button_4 = Button(root, text="4", padx=40, pady=20,
+button_4 = Button(root, text="4", fg='red', padx=40, pady=20,
                   command=lambda: buttonClick(4))
-button_5 = Button(root, text="5", padx=40, pady=20,
+button_5 = Button(root, text="5", fg='red', padx=40, pady=20,
                   command=lambda: buttonClick(5))
-button_6 = Button(root, text="6", padx=40, pady=20,
+button_6 = Button(root, text="6", fg='red', padx=40, pady=20,
                   command=lambda: buttonClick(6))
-button_7 = Button(root, text="7", padx=40, pady=20,
+button_7 = Button(root, text="7", fg='red', padx=40, pady=20,
                   command=lambda: buttonClick(7))
-button_8 = Button(root, text="8", padx=40, pady=20,
+button_8 = Button(root, text="8", fg='red', padx=40, pady=20,
                   command=lambda: buttonClick(8))
-button_9 = Button(root, text="9", padx=40, pady=20,
+button_9 = Button(root, text="9", fg='red', padx=40, pady=20,
                   command=lambda: buttonClick(9))
-button_0 = Button(root, text="0", padx=39, pady=20,
+button_0 = Button(root, text="0", fg='red', padx=39, pady=20,
                   command=lambda: buttonClick(0))
 
 # Create unique buttons
-button_add = Button(root, text="+", padx=39, pady=20, command=buttonAdd)
-button_equals = Button(root, text="=", padx=101, pady=20, command=buttonEquals)
-button_clear = Button(root, text="Clear", padx=89,
+button_add = Button(root, text="+", fg='blue', padx=39,
+                    pady=20, command=buttonAdd)
+button_equals = Button(root, text="=", fg='blue',
+                       padx=101, pady=20, command=buttonEquals)
+button_clear = Button(root, text="Clear", fg='green', padx=89,
                       pady=20, command=buttonClear)
-button_subtract = Button(root, text="-", padx=40,
+button_subtract = Button(root, text="-", fg='blue', padx=40,
                          pady=20, command=buttonSubtract)
-button_multiply = Button(root, text="*", padx=41,
+button_multiply = Button(root, text="*", fg='blue', padx=41,
                          pady=20, command=buttonMultiply)
-button_divide = Button(root, text="/", padx=42, pady=20, command=buttonDivide)
+button_divide = Button(root, text="/", fg='blue',
+                       padx=42, pady=20, command=buttonDivide)
 
 # Display buttons to the screen
 button_1.grid(row=3, column=0)
